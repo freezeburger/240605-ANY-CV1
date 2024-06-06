@@ -1,0 +1,55 @@
+{
+  "name": "any-training",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.19.0"
+  },
+  "scripts": {
+    "ng": "ng",
+    "default:start": "ng serve",
+    "default:build": "ng build",
+    "default:watch": "ng build --watch --configuration development",
+    "default:test": "ng test",
+    "default:compodoc:build": "compodoc -p tsconfig.doc.json",
+    "default:compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
+
+    "standalone:start": "ng serve --project=app-standalone",
+    "standalone:build": "ng build --project=app-standalone",
+    "standalone:watch": "ng build --watch --configuration development --project=app-standalone",
+    "standalone:test": "ng test --project=app-standalone",
+    "lib:build": "ng build --project=lib-any",
+    "lib:test": "ng test --project=lib-any",
+    "prelib:pack": "npm run lib:build",
+    "lib:pack": "npm pack dist/lib-any --pack-destination packages"
+
+  },
+  "dependencies": {
+    "@angular/animations": "^18.0.0",
+    "@angular/common": "^18.0.0",
+    "@angular/compiler": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@angular/forms": "^18.0.0",
+    "@angular/platform-browser": "^18.0.0",
+    "@angular/platform-browser-dynamic": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.0.2",
+    "@angular/cli": "^18.0.2",
+    "@angular/compiler-cli": "^18.0.0",
+    "@compodoc/compodoc": "^1.1.25",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.0.0",
+    "typescript": "~5.4.2"
+  }
+}

@@ -1,0 +1,23 @@
+
+
+<ng-container *ngIf="userService.data$ | async as users">
+
+  <h1>Nombre d'utilisateurs : {{users.length}}</h1>
+
+  <h2 *ngIf="users.length">Dernier ustilisateur: {{users[0].name}}</h2>
+
+  <ul>
+    <li *ngFor="let user of users">
+      {{user.name}}
+    </li>
+  </ul>
+
+</ng-container>
+
+<!--
+<pre>
+  {{ userService.data$ | async | json }}
+</pre>
+ -->
+
+<!-- <button (click)="userService.read()">Load List</button> -->
