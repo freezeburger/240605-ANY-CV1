@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component, ComponentRef, ContentChild, Host, HostBinding, HostListener, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { ChildTheory } from './child.theory';
+import { DummyService } from './dummy.service';
 
 @Component({
   selector: 'app-parent',
   template: `
     <div>
+        <app-consumer></app-consumer>
         <app-child title="First Child" custom>
           <h3 #title> Hello from parent </h3>
           <app-side></app-side>

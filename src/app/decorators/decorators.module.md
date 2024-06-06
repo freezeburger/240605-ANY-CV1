@@ -25,7 +25,7 @@
 ## Injection
 
 * ⭐ `@Inject`
-* `@Host`
-* `@Self`
-* `@SkipSelf`
-* `@Optional` 
+* ⭐ `@Host`
+* ⭐ `@Self`
+* ⭐ `@SkipSelf`
+* ⭐ `@Optional` 

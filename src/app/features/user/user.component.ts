@@ -1,5 +1,5 @@
 import { Component, Inject, inject } from '@angular/core';
-import { UserService } from './user.service';
+import { USER_CRUD_PROVIDERS } from './user.token';
 
 @Component({
   selector: 'app-user',
@@ -8,7 +8,8 @@ import { UserService } from './user.service';
 })
 export class UserComponent {
 
-  public userService = inject(UserService);
+  public userService = inject(USER_CRUD_PROVIDERS);
+
 
   /*
   constructor(

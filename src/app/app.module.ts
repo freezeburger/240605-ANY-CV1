@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { UserModule } from './features/user/user.module';
 import { CoreModule } from './core/core.module';
 import { DecoratorsModule } from './decorators/decorators.module';
-
+import { LibIntegrationModule } from './lib-integration/lib-integration.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +16,8 @@ import { DecoratorsModule } from './decorators/decorators.module';
     AppRoutingModule,
     CoreModule,
     UserModule,
-    DecoratorsModule
+    DecoratorsModule,
+    LibIntegrationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

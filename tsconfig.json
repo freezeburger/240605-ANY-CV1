@@ -8,8 +8,12 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "lib-any": [
+       // Alias d'import pour les librairies
+      "@any": [
         "./dist/lib-any"
+      ],
+      "@any/dev": [
+        "./projects/lib-any/src/public-api"
       ]
     },
     "noFallthroughCasesInSwitch": true,
